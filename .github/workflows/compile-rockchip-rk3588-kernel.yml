@@ -13,21 +13,16 @@ on:
       kernel_source:
         description: "Select the kernel source"
         required: false
-        default: "unifreq/linux-5.10.y-rk35xx"
+        default: "armbian/linux-rockchip@rk-6.1-rkr5.1"
         type: choice
         options:
-          - unifreq/linux-5.10.y-rk35xx
-          - unifreq/linux-6.1.y-rockchip
-          - codesnas/linux-5.10.y-rk35xx
-          - codesnas/linux-6.1.y-rockchip
           - armbian/linux-rockchip@rk-6.1-rkr5.1
       kernel_version:
         description: "Select kernel version"
         required: false
-        default: "5.10.y"
+        default: "6.1.y"
         type: choice
         options:
-          - 5.10.y
           - 6.1.y
       kernel_auto:
         description: "Auto use the latest kernel"
@@ -76,17 +71,7 @@ on:
         default: "-rk3588-ophub"
         type: choice
         options:
-          - -rk3588-ophub
-          - -happy-new-year
-          - -dragon-boat-festival
-          - -mid-autumn-festival
-          - -happy-national-day
-          - -merry-christmas
-          - -spring-plowing
-          - -summer-growing
-          - -autumn-harvesting
-          - -winter-storing
-          - -yourname
+          - -rk3588-lighthx
       kernel_config:
         description: "Set the path of kernel .config"
         required: false

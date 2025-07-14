@@ -17,6 +17,7 @@ on:
         type: choice
         options:
           - armbian/linux-rockchip@rk-6.1-rkr5.1
+          - unifreq/linux-6.1.y-rockchip
       kernel_version:
         description: "Select kernel version"
         required: false
